@@ -61,13 +61,15 @@ class FlxEntityRenderer implements Renderer {
 						}
 
 						if(map.orientation == TiledMapOrientation.Isometric) {
-							position.x += map.totalWidth/2;
+							position.x += map.totalWidth * 0.5;
 						}
 
 						var flxTile:FlxTile = new FlxTile(tile, bitmapData);
 
 						flxTile.x = position.x;
 						flxTile.y = position.y;
+
+						flxTile.alpha = layer.opacity;
 
 						flxLayer.add(flxTile);
 					}
@@ -76,9 +78,6 @@ class FlxEntityRenderer implements Renderer {
 				}
 			}
 		}
-		
-		// set alpha on each tile
-		flxLayer.forEach(function(flxTile:FlxTile):Void { flxTile.alpha = layer.opacity; });
 		
 		on.layers.push(flxLayer);
 		
