@@ -21,11 +21,7 @@
 // THE SOFTWARE.
 package openfl.tiled;
 
-import flixel.FlxG;
 import flixel.FlxBasic;
-import flixel.FlxSprite;
-import flixel.group.FlxGroup;
-
 import openfl.tiled.Layer;
 
 class FlxLayer extends FlxTypedGroup<FlxTile> {

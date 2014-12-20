@@ -22,12 +22,7 @@
 package openfl.tiled;
 
 import flash.display.BitmapData;
-
-import flixel.FlxG;
 import flixel.FlxSprite;
-import flixel.group.FlxGroup;
-import flixel.math.FlxRect;
-
 import openfl.tiled.Tile;
 
 class FlxTile extends FlxSprite {

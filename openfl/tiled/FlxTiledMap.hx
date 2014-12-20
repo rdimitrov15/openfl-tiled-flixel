@@ -21,18 +21,8 @@
 // THE SOFTWARE.
 package openfl.tiled;
 
-import flash.geom.Rectangle;
-import flash.geom.Point;
-import flash.display.BitmapData;
-
-import flixel.FlxG;
-import flixel.FlxObject;
-import flixel.FlxSprite;
-import flixel.group.FlxGroup;
-import flixel.util.FlxColor;
-
-import openfl.tiled.display.Renderer;
 import openfl.tiled.display.FlxEntityRenderer;
+import openfl.tiled.display.Renderer;
 
 class FlxTiledMap extends FlxTypedGroup<FlxLayer> {
 
