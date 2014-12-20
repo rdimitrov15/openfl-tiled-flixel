@@ -23,6 +23,7 @@ package openfl.tiled;
 
 import flixel.FlxBasic;
 import openfl.tiled.Layer;
+import flixel.group.FlxGroup;
 
 class FlxLayer extends FlxTypedGroup<FlxTile> {
 
