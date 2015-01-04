@@ -87,7 +87,6 @@ class FlxTiledMap extends FlxTypedGroup<FlxLayer> {
 
 	public static function fromAssets(path:String):FlxTiledMap {
 		var renderer = new FlxEntityRenderer();
-
 		var map = TiledMap.fromAssetsWithAlternativeRenderer(path, renderer, false);
 
 		return new FlxTiledMap(map);
